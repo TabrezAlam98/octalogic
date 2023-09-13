@@ -1,0 +1,95 @@
+{
+  "posts":[
+    {
+      "Name": "Mathematics 101",
+      "Description": "Foundational math course for beginners.",
+      "Instructor": "Professor Smith",
+      "Instrument": "Whiteboard",
+      "Day of Week": "Monday",
+      "Number of Students": 15,
+      "Price": 99
+    },
+    {
+      "Name": "Beginner's Yoga",
+      "Description": "Gentle yoga classes for relaxation and flexibility.",
+      "Instructor": "Yoga Instructor Jane",
+      "Instrument": "Yoga Mat",
+      "Day of Week": "Tuesday",
+      "Number of Students": 10,
+      "Price": 49
+    },
+    {
+      "Name": "Creative Writing Workshop",
+      "Description": "Unlock your creativity with writing exercises and feedback.",
+      "Instructor": "Author Lisa Johnson",
+      "Instrument": "Pen and Paper",
+      "Day of Week": "Wednesday",
+      "Number of Students": 12,
+      "Price": 79
+    },
+    {
+      "Name": "Guitar Basics",
+      "Description": "Learn to play the guitar from scratch.",
+      "Instructor": "Guitarist Mark Davis",
+      "Instrument": "Guitar",
+      "Day of Week": "Thursday",
+      "Number of Students": 8,
+      "Price": 69
+    },
+    {
+      "Name": "Digital Photography",
+      "Description": "Master the art of digital photography and editing.",
+      "Instructor": "Photographer Emily Wilson",
+      "Instrument": "Camera",
+      "Day of Week": "Friday",
+      "Number of Students": 10,
+      "Price": 89
+    },
+    {
+      "Name": "Spanish Conversation",
+      "Description": "Practice your conversational Spanish skills.",
+      "Instructor": "Spanish Tutor Carlos",
+      "Instrument": "Language",
+      "Day of Week": "Monday",
+      "Number of Students": 6,
+      "Price": 59
+    },
+    {
+      "Name": "Fitness Bootcamp",
+      "Description": "High-intensity fitness training for all levels.",
+      "Instructor": "Fitness Coach Lisa",
+      "Instrument": "Gym Equipment",
+      "Day of Week": "Tuesday",
+      "Number of Students": 15,
+      "Price": 79
+    },
+    {
+      "Name": "Introduction to Coding",
+      "Description": "Get started with coding and programming concepts.",
+      "Instructor": "Coder Mike",
+      "Instrument": "Computer",
+      "Day of Week": "Wednesday",
+      "Number of Students": 10,
+      "Price": 49
+    },
+    {
+      "Name": "Art Appreciation",
+      "Description": "Explore the world of art through famous works and artists.",
+      "Instructor": "Art Historian Sarah",
+      "Instrument": "Visual Art",
+      "Day of Week": "Thursday",
+      "Number of Students": 12,
+      "Price": 69
+    },
+    {
+      "Name": "Cooking Basics",
+      "Description": "Learn essential cooking techniques and recipes.",
+      "Instructor": "Chef Maria",
+      "Instrument": "Kitchen",
+      "Day of Week": "Friday",
+      "Number of Students": 8,
+      "Price": 59
+    }
+  ]
+  
+}
