@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect} from "react";
 import { AiOutlineSearch } from 'react-icons/Ai';
 import { BiDotsVertical } from 'react-icons/Bi';
 import {
@@ -10,9 +10,18 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
+import { useDispatch, useSelector } from "react-redux";
+import {getCoursesData} from "../Redux/TableDataRedecer/action"
 const Courses = () => {
+  const data = useSelector((state) => state.CourseReducer.course);
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(getCoursesData());
+  }, [dispatch]);
+  console.log(data)
   return (
-    <div className="bg-[#F4F4F4] w-full h-screen">
+    <div className="bg-[#F4F4F4] w-full ">
       <p className="text-[#83858B;] text-[28px] font-[700] ml-8 pt-2 mb-5">
         Courses
       </p>
@@ -59,35 +68,40 @@ const Courses = () => {
             </TableRow>
           </TableHeader>
           <TableBody>
-            <TableRow>
-              <TableCell className="font-[400] text-[14px] leading-[19px] text-[#212529]">
-                INV001
+          {data.map((el)=>{
+            return (
+              <TableRow>
+              <TableCell className="whitespace-nowrap truncate max-w-[100px] font-[400] text-[14px] leading-[19px] text-[#212529]">
+               {el.Name}
+              </TableCell>
+              <TableCell className="whitespace-nowrap truncate max-w-[200px] font-[400] text-[14px] leading-[19px] text-[#212529]">
+                {el.Description}
               </TableCell>
               <TableCell className="font-[400] text-[14px] leading-[19px] text-[#212529]">
-                Paid
+                {el.Instructor}
               </TableCell>
               <TableCell className="font-[400] text-[14px] leading-[19px] text-[#212529]">
-                Credit Card
+                {el.Instrument}
               </TableCell>
               <TableCell className="font-[400] text-[14px] leading-[19px] text-[#212529]">
-                $250.00
+               {el.Day_of_week}
               </TableCell>
               <TableCell className="font-[400] text-[14px] leading-[19px] text-[#212529]">
-                $250.00
+                {el.Students}
               </TableCell>
               <TableCell className="font-[400] text-[14px] leading-[19px] text-[#212529]">
-                $250.00
+              ${el.Price}
               </TableCell>
-              <TableCell className="font-[400] text-[14px] leading-[19px] text-[#212529]">
-                $250.00
-              </TableCell>
-              <TableCell className="font-[400] text-[14px] leading-[19px] text-[#212529] w-[20px]  bg-[#CFF9DF]">
-                $250.00
+              <TableCell className="font-[400] text-[14px] leading-[19px] text-[#212529] w-[20px]  ">
+               <p className=" bg-[#CFF9DF] text-[12px] p-2 rounded-md">Active</p>
               </TableCell>
               <TableCell className="font-[400] text-[25px] leading-[19px] text-[#212529]">
                <p className="ml-4"><BiDotsVertical/></p> 
               </TableCell>
             </TableRow>
+            )
+          })}
+            
           </TableBody>
         </Table>
       </div>

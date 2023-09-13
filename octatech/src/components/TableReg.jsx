@@ -1,6 +1,6 @@
 import React,{useEffect} from "react";
 import { useDispatch, useSelector } from "react-redux";
-import {getoverviewData} from "../Redux/TableDataRedecer/action"
+import {getregData} from "../Redux/TableDataRedecer/action"
 import {
   Table,
   TableBody,
@@ -10,54 +10,60 @@ import {
   TableRow,
 } from "@/components/ui/table";
 
-const table = () => {
-  const overviewData = useSelector((state) => state.CourseReducer.course);
+const TableReg = () => {
+  const data = useSelector((state) => state.CourseReducer.course);
   const dispatch = useDispatch();
 
   useEffect(() => {
-    dispatch(getoverviewData());
+    dispatch(getregData());
   }, [dispatch]);
-  console.log(overviewData)
+  console.log(data)
   return (
     <div className="w-full bg-white rounded-lg">
       <Table>
         <TableHeader>
           <TableRow>
             <TableHead className="font-[700] text-[14px] leading-[19px] text-[#212529] ">
-              Enr. No
+              Reg. No
             </TableHead>
             <TableHead className="font-[700] text-[14px] leading-[19px] text-[#212529]">
-              S. Name
+              F. Name
             </TableHead>
             <TableHead className="font-[700] text-[14px] leading-[19px] text-[#212529]">
-              C. Name
+              L. Name
             </TableHead>
             <TableHead className="font-[700] text-[14px] leading-[19px] text-[#212529]">
-              Fees
+              Courses #
             </TableHead>
             <TableHead className="font-[700] text-[14px] leading-[19px] text-[#212529]">
-              Enr. Date
+              Total Fees
+            </TableHead>
+            <TableHead className="font-[700] text-[14px] leading-[19px] text-[#212529]">
+              Reg. Date
             </TableHead>
           </TableRow>
         </TableHeader>
         <TableBody>
-          {overviewData.map((el)=>{
+          {data.map((ele)=>{
            return(
-            <TableRow key={el.enr_no}>
+            <TableRow key={ele.reg_n}>
             <TableCell className="font-[400] text-[14px] leading-[19px] text-[#212529]">
-              {el.enr_no}
+              {ele.reg_n}
             </TableCell>
             <TableCell className="font-[400] text-[14px] leading-[19px] text-[#212529]">
-              {el.s_name}
+              {ele.f_name}
             </TableCell>
             <TableCell className="font-[400] text-[14px] leading-[19px] text-[#212529]">
-            {el.c_name}
+            {ele.l_name}
             </TableCell>
             <TableCell className="font-[400] text-[14px] leading-[19px] text-[#212529]">
-              {el.fees}
+              {ele.course_qty}
             </TableCell>
             <TableCell className="font-[400] text-[14px] leading-[19px] text-[#212529]">
-              {el.enr_date}
+              {ele.total_fees}
+            </TableCell>
+            <TableCell className="font-[400] text-[14px] leading-[19px] text-[#212529]">
+              {ele.enr_date}
             </TableCell>
           </TableRow>
            )
@@ -69,4 +75,4 @@ const table = () => {
   );
 };
 
-export default table;
+export default TableReg;

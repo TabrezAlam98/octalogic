@@ -1,9 +1,11 @@
 import React from "react";
 import { HiUsers } from "react-icons/Hi";
 import Table from './Table'
+import TableReg from "./TableReg";
 const Overview = () => {
+ 
   return (
-    <div className="bg-[#F4F4F4] w-full h-screen">
+    <div className="bg-[#F4F4F4] w-full ">
       <p className="text-[#83858B;] text-[28px] font-[700] ml-8 pt-2 mb-5">
         Overview
       </p>
@@ -98,6 +100,15 @@ const Overview = () => {
 
       <div className=" w-[95%] h-[400px] m-auto ">
         <Table/>
+      </div>
+      
+      <div className="flex flex-row justify-between mt-[-60px] m-auto w-[95%] h-10 ">
+        <p className="font-nurut font-sans text-[16px] font-[700] leading-[21px] tracking-[.4px] text-[#83858B]"> Best Students </p>
+        <p className="font-nurut font-sans text-[14px] font-[400] leading-[19px]  text-[#901E75]">View All Students</p>
+      </div>
+
+      <div className=" w-[95%] h-[400px] m-auto ">
+      <Table/>
       </div>
     </div>
   );

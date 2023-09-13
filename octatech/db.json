@@ -1,12 +1,12 @@
 {
-  "posts":[
+  "courseData":[
     {
       "Name": "Mathematics 101",
       "Description": "Foundational math course for beginners.",
       "Instructor": "Professor Smith",
       "Instrument": "Whiteboard",
-      "Day of Week": "Monday",
-      "Number of Students": 15,
+      "Day_of_week": "Monday",
+      "Students": 15,
       "Price": 99
     },
     {
@@ -14,8 +14,8 @@
       "Description": "Gentle yoga classes for relaxation and flexibility.",
       "Instructor": "Yoga Instructor Jane",
       "Instrument": "Yoga Mat",
-      "Day of Week": "Tuesday",
-      "Number of Students": 10,
+      "Day_of_week": "Tuesday",
+      "Students": 10,
       "Price": 49
     },
     {
@@ -23,8 +23,8 @@
       "Description": "Unlock your creativity with writing exercises and feedback.",
       "Instructor": "Author Lisa Johnson",
       "Instrument": "Pen and Paper",
-      "Day of Week": "Wednesday",
-      "Number of Students": 12,
+      "Day_of_week": "Wednesday",
+      "Students": 12,
       "Price": 79
     },
     {
@@ -32,17 +32,17 @@
       "Description": "Learn to play the guitar from scratch.",
       "Instructor": "Guitarist Mark Davis",
       "Instrument": "Guitar",
-      "Day of Week": "Thursday",
-      "Number of Students": 8,
+      "Day_of_week": "Thursday",
+      "Students": 8,
       "Price": 69
     },
     {
       "Name": "Digital Photography",
       "Description": "Master the art of digital photography and editing.",
-      "Instructor": "Photographer Emily Wilson",
+      "Instructor": "Photographer Emily",
       "Instrument": "Camera",
-      "Day of Week": "Friday",
-      "Number of Students": 10,
+      "Day_of_week": "Friday",
+      "Students": 10,
       "Price": 89
     },
     {
@@ -50,8 +50,8 @@
       "Description": "Practice your conversational Spanish skills.",
       "Instructor": "Spanish Tutor Carlos",
       "Instrument": "Language",
-      "Day of Week": "Monday",
-      "Number of Students": 6,
+      "Day_of_week": "Monday",
+      "Students": 6,
       "Price": 59
     },
     {
@@ -59,8 +59,8 @@
       "Description": "High-intensity fitness training for all levels.",
       "Instructor": "Fitness Coach Lisa",
       "Instrument": "Gym Equipment",
-      "Day of Week": "Tuesday",
-      "Number of Students": 15,
+      "Day_of_week": "Tuesday",
+      "Students": 15,
       "Price": 79
     },
     {
@@ -68,8 +68,8 @@
       "Description": "Get started with coding and programming concepts.",
       "Instructor": "Coder Mike",
       "Instrument": "Computer",
-      "Day of Week": "Wednesday",
-      "Number of Students": 10,
+      "Day_of_week": "Wednesday",
+      "Students": 10,
       "Price": 49
     },
     {
@@ -77,8 +77,8 @@
       "Description": "Explore the world of art through famous works and artists.",
       "Instructor": "Art Historian Sarah",
       "Instrument": "Visual Art",
-      "Day of Week": "Thursday",
-      "Number of Students": 12,
+      "Day_of_week": "Thursday",
+      "Students": 12,
       "Price": 69
     },
     {
@@ -86,9 +86,88 @@
       "Description": "Learn essential cooking techniques and recipes.",
       "Instructor": "Chef Maria",
       "Instrument": "Kitchen",
-      "Day of Week": "Friday",
-      "Number of Students": 8,
+      "Day_of_Week": "Friday",
+      "Students": 8,
       "Price": 59
+    }
+  ],
+  "overviewData":[
+    {
+      "enr_no": "ENR001",
+      "s_name": "John Smith",
+      "c_name": "Mathematics 101",
+      "fees": 99,
+      "enr_date": "2023-09-12"
+    },
+    {
+      "enr_no": "ENR002",
+      "s_name": "Emily Johnson",
+      "c_name": "Creative Writing Workshop",
+      "fees": 79,
+      "enr_date": "2023-09-13"
+    },
+    {
+      "enr_no": "ENR003",
+      "s_name": "Michael Davis",
+      "c_name": "Guitar Basics",
+      "fees": 69,
+      "enr_date": "2023-09-14"
+    },
+    {
+      "enr_no": "ENR004",
+      "s_name": "Sarah Anderson",
+      "c_name": "Art Appreciation",
+      "fees": 69,
+      "enr_date": "2023-09-15"
+    },
+    {
+      "enr_no": "ENR005",
+      "s_name": "Jennifer Lee",
+      "c_name": "Yoga and Mindfulness Meditation",
+      "fees": 89,
+      "enr_date": "2023-09-16"
+    }
+  ],
+  "regData":[
+    {
+      "reg_n": "REG001",
+      "f_name": "John",
+      "l_name": "Smith",
+      "course_qty": 3,
+      "total_fees": 250,
+      "enr_date": "2023-09-12"
+    },
+    {
+      "reg_n": "REG002",
+      "f_name": "Emily",
+      "l_name": "Johnson",
+      "course_qty": 2,
+      "total_fees": 160,
+      "enr_date": "2023-09-13"
+    },
+    {
+      "reg_n": "REG003",
+      "f_name": "Michael",
+      "l_name": "Davis",
+      "course_qty": 1,
+      "total_fees": 69,
+      "enr_date": "2023-09-14"
+    },
+    {
+      "reg_n": "REG004",
+      "f_name": "Sarah",
+      "l_name": "Anderson",
+      "course_qty": 2,
+      "total_fees": 138,
+      "enr_date": "2023-09-15"
+    },
+    {
+      "reg_n": "REG005",
+      "f_name": "Jennifer",
+      "l_name": "Lee",
+      "course_qty": 1,
+      "total_fees": 89,
+      "enr_date": "2023-09-16"
     }
   ]
   
