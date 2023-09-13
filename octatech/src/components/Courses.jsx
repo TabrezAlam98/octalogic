@@ -1,4 +1,4 @@
-import React,{useEffect} from "react";
+import React,{useEffect,useState} from "react";
 import { AiOutlineSearch } from 'react-icons/Ai';
 import { BiDotsVertical } from 'react-icons/Bi';
 import {
@@ -15,6 +15,17 @@ import {getCoursesData} from "../Redux/TableDataRedecer/action"
 const Courses = () => {
   const data = useSelector((state) => state.CourseReducer.course);
   const dispatch = useDispatch();
+  const [text,setText]=useState("")
+
+const handleSearch = (e) => {
+  setText(e.target.value);
+  const getdata = {
+    params: {
+      course: text,
+    },
+  };
+  dispatch(getCoursesData(getdata));
+};
 
   useEffect(() => {
     dispatch(getCoursesData());
@@ -31,7 +42,7 @@ const Courses = () => {
         </p>
         <div className="flex flex-row mb-2 bg-white w-[220px] rounded-m">
          <p className="text-m mt-2 mr-1 ml-3 text-[#83858B]"><AiOutlineSearch/></p>
-          <input placeholder="search" className="w-full" />
+          <input value={text} onChange={handleSearch} placeholder="search" className="w-full" />
         </div>
       </div>
       <div className="w-[95%] m-auto bg-white rounded-lg">

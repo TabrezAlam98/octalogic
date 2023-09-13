@@ -31,14 +31,16 @@ const Home = () => {
         </Button>
         </Link>
         
+        <Link to="/login">
         <Button className={Style.btn3}>
           <div className="flex flex-col background-red-200 ">
             <p className="text-2xl text-[#83858B] h-[18px] mt-[2px] ml-[8px] mb-2">
               <MdOutlineLogout />
             </p>
-            <p className="text-[12px] text-[#83858B]  leading-3 mb-2">Logout</p>
+            <p className="text-[12px] text-[#83858B]  leading-3 mb-2">Login</p>
           </div>
         </Button>
+        </Link>
       </div>
       <div className="w-[90%] h-screen border-2 border-gray-200">
         <AllRoutes/>
